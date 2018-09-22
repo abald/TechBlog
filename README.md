@@ -8,26 +8,20 @@ On Windows
 ```
 python3 -m venv env
 env\Scripts\activate
-pip install django~=1.11.0
+pip install django==2.1.1
 ```
 
 On Linux
 ```bash
 virtualenv -p python3.6 env
 source env/bin/activate
-pip install django~=1.11.0
+pip install django==2.1.1
 ```
 
 **Make database migrations**
 
-On Windows
 ```
-* python3 manage.py makemigrations blog
-```
-
-On Linux
-```bash
-* python3 manage.py makemigrations blog
+* python3 manage.py migrate
 ```
 
 # Start
