@@ -1,7 +1,35 @@
+### IPythonNotebook template
+# Temporary data
+.ipynb_checkpoints/
+
+### JetBrains template
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio
+*.iml
+
+## Directory-based project format:
+.idea/
+coverage*
+.coverage
+.tox
+.cache
+*.egg-info
 *.pyc
-*~
-__pycache__
-myvenv
+build/
+upload_local/
+dist/
+env/
+.env/
+venv/
+myenv/
+mysql/
+sql-reports/
+.pytest_cache/
+
+# pyenv
+.python-version
+*.dev.*
+*.ipynb
+config.ini
+
+# databases
 db.sqlite3
-/static
-.DS_Store

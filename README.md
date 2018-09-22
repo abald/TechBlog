@@ -1,19 +1,37 @@
-# Установка 
+# Install 
 
+TechBlog works in virtual environment.
+
+**Make virtualenv and install requirements**
+
+On Windows
 ```
-* cd TechBlog
-* python3 -m venv myvenv
-* myvenv\Scripts\activate - windows
-* source myvenv/bin/activate  - linux
-* (myvenv) ~$ python3 -m pip install --upgrade pip
-* (myvenv) ~$ pip install django~=1.11.0
+python3 -m venv env
+env\Scripts\activate
+pip install django~=1.11.0
+```
+
+On Linux
+```bash
+virtualenv -p python3.6 env
+source env/bin/activate
+pip install django~=1.11.0
+```
+
+**Make database migrations**
+
+On Windows
+```
 * python3 manage.py makemigrations blog
 ```
 
-# Запуск
+On Linux
+```bash
+* python3 manage.py makemigrations blog
+```
+
+# Start
 
 ```
-* myvenv\Scripts\activate - windows
-* source myvenv/bin/activate  - linux
-* (myvenv) ~$ python3 manage.py runserver
+python3 manage.py runserver
 ```
