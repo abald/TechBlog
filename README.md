@@ -8,6 +8,7 @@
 * (myvenv) ~$ python3 -m pip install --upgrade pip
 * (myvenv) ~$ pip install django~=1.11.0
 * python3 manage.py makemigrations blog
+* python manage.py createsuperuser
 ```
 
 # Запуск
