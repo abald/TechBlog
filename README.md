@@ -35,3 +35,4 @@ python3 manage.py createsuperuser
 ```
 python3 manage.py runserver
 ```
+Service ready and could be accessed trought `http://127.0.0.1:8000/`
