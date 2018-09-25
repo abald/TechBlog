@@ -1,4 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
+from django.core import exceptions
 from django.utils import timezone
 from .models import Post
 from .forms import PostForm
@@ -14,6 +15,8 @@ def post_detail(request, pk):
 
     
 def post_new(request):
+    if not request.user.is_authenticated:
+        raise exceptions.PermissionDenied('User not authorized')
     if request.method == "POST":
         form = PostForm(request.POST)
         if form.is_valid():
