@@ -55,13 +55,7 @@ source env/bin/activate
 pip install django==2.1.1
 ```
 
-## Make database migrations\*\*
-
-```
-* python3 manage.py migrate
-```
-
-### Mac:
+## Make database migrations
 
 ```bash
 python3 manage.py migrate
