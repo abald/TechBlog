@@ -24,6 +24,7 @@ myenv/
 mysql/
 sql-reports/
 .pytest_cache/
+.vscode/
 
 # pyenv
 .python-version
