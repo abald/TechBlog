@@ -1,9 +1,18 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <h1>New post</h1>
-    <form method="POST" class="post-form">{% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Save</button>
-    </form>
+<h2>New post</h2>
+
+<form method="POST" class="post-form"> {% csrf_token %}
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" name="title" class="form-control" value="{{ title }}" aria-describedby="title">
+    </div>
+    <div class="form-group">
+        <label for="text">Text</label>
+        <textarea rows="20" name="text" class="form-control" value="{{ text }}" placeholder="Write your post here"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Post</button>
+
+</form>
 {% endblock %}

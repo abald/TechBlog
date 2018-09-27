@@ -1,8 +1,8 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-<div class="post">
-    <h2><a href="/blog/{{ post.url }}">{{ post.title }}</a></h2>
+<article class="mt-5">
+    <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
     {% if post.published_date %}
     <p class="small text-secondary">
         {{ post.published_date }}
@@ -10,5 +10,5 @@
     {% endif %}
 
     <p>{{ post.text|linebreaksbr }}</p>
-</div>
+</article>
 {% endblock %}
