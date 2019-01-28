@@ -9,7 +9,7 @@ TechBlog works in virtual environment.
 ```
 python3 -m venv env
 env\Scripts\activate
-pip install django==2.1.2
+pip install django==2.1.5
 ```
 
 ### Linux
@@ -17,7 +17,7 @@ pip install django==2.1.2
 ```bash
 virtualenv -p python3.6 env
 source env/bin/activate
-pip install django==2.1.2
+pip install django==2.1.5
 ```
 
 ### Mac
@@ -45,14 +45,14 @@ Now check Python version, it should return `Python 3.6`+:
 python3 -V
 ```
 
-Next steps install `pip`, `virtualenv` (and activates it) and `django 2.1.2`:
+Next steps install `pip`, `virtualenv` (and activates it) and `django 2.1.5`:
 
 ```bash
 sudo easy_install pip
 sudo pip install virtualenv
 virtualenv env -p python3.6
 source env/bin/activate
-pip install django==2.1.2
+pip install django==2.1.5
 ```
 
 ## Make database migrations
